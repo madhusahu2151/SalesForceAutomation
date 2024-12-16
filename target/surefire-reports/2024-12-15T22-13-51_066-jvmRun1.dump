@@ -1,0 +1,52 @@
+# Created at 2024-12-15T22:13:52.116
+org.testng.TestNGException: 
+Cannot instantiate class com.salesforce.testcases.SFDCLoginTestCases
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:30)
+	at org.testng.internal.InstanceCreator.instantiateUsingDefaultConstructor(InstanceCreator.java:193)
+	at org.testng.internal.InstanceCreator.createInstanceUsingObjectFactory(InstanceCreator.java:113)
+	at org.testng.internal.InstanceCreator.createInstance(InstanceCreator.java:79)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:25)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:30)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:112)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:165)
+	at org.testng.TestClass.getInstances(TestClass.java:122)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:102)
+	at org.testng.TestClass.init(TestClass.java:94)
+	at org.testng.TestClass.<init>(TestClass.java:59)
+	at org.testng.TestRunner.initMethods(TestRunner.java:463)
+	at org.testng.TestRunner.init(TestRunner.java:339)
+	at org.testng.TestRunner.init(TestRunner.java:292)
+	at org.testng.TestRunner.<init>(TestRunner.java:183)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:596)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:173)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:107)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1300)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1276)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	... 30 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.apache.logging cannot be resolved
+	The import org.apache.logging cannot be resolved
+	Logger cannot be resolved to a type
+	LogManager cannot be resolved
+	Logger cannot be resolved to a type
+
+	at com.salesforce.testcases.SFDCLoginTestCases.<init>(SFDCLoginTestCases.java:9)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 33 more
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sales Force Test Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sales Force Test Case(failed)">
+    <classes>
+      <class name="com.salesforce.testcases.SFDCLoginTestCases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ValidLoginTest"/>
+          <include name="BrowserLaunch"/>
+        </methods>
+      </class> <!-- com.salesforce.testcases.SFDCLoginTestCases -->
+    </classes>
+  </test> <!-- Sales Force Test Case(failed) -->
+</suite> <!-- Failed suite [Sales Force Test Automation Suite] -->

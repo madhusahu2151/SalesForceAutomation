@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sales Force Test Automation Suite">
+
+
+
+    <test name="Sales Force Test Case">
+      
+         <classes>
+             <class name="com.salesforce.testcases.SFDCLoginTestCases"/>
+             
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->

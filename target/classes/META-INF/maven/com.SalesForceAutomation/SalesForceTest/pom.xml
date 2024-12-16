@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- Model version, always 4.0.0 for Maven -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Coordinates of the project (groupId, artifactId, and version) -->
+	<groupId>com.SalesForceAutomation</groupId>   <!-- Group ID (usually your organization's
+	domain name) -->
+	<artifactId>SalesForceTest</artifactId> <!-- Artifact ID (your project's name) -->
+	<version>1.0-SNAPSHOT</version>  <!-- Version of your project -->
+
+	<!-- Project name (optional) -->
+	<name>SalesForceProject</name>
+
+	<!-- Packaging type (default is jar, can be war, pom, etc.) -->
+	<packaging>jar</packaging>  <!-- or war for web projects -->
+
+	<!-- Project dependencies -->
+	<dependencies>
+
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.9</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version> <!-- Replace with the latest version -->
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Log4j 2 API and Core Dependencies -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.20.0</version> <!-- Use the latest stable version -->
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.20.0</version> <!-- Use the latest stable version -->
+    </dependency>
+
+    <!-- Optional: Log4j 2 SLF4J Binding (if you are using SLF4J as a facade) -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>2.20.0</version>
+    </dependency>
+
+    <!-- Optional: Log4j 2 Log4j2 Console Appender (to print logs to console) -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.20.0</version>
+    </dependency>
+
+
+	</dependencies>
+
+	<!-- Build section for configuring plugins -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>17</source>  <!-- Set Java source version -->
+					<target>17</target>  <!-- Set Java target version -->
+				</configuration>
+			</plugin>
+		
+      <!-- Add the Surefire Plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.2</version> <!-- Choose the appropriate version -->
+        <configuration>
+          <!-- Specify your TestNG XML file location -->
+          <suiteXmlFiles>
+            <suiteXmlFile>TestNG.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+	</build>
+	
+
+</project>

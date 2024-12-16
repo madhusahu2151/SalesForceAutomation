@@ -1,0 +1,14 @@
+[INFO ] 2024-12-12 23:25:27.643 [main] SFDCLogin - Setting up the test environment.
+[DEBUG] 2024-12-12 23:25:27.644 [main] SFDCLogin - This is a debug message
+[INFO ] 2024-12-12 23:25:27.644 [main] SFDCLogin - This is an info message
+[WARN ] 2024-12-12 23:25:27.644 [main] SFDCLogin - This is a warn message
+[ERROR] 2024-12-12 23:25:27.644 [main] SFDCLogin - This is an error message
+[FATAL] 2024-12-12 23:25:27.644 [main] SFDCLogin - This is a fatal message
+[INFO ] 2024-12-12 23:25:29.161 [main] SFDCLogin - TestCase for password feild empty
+[INFO ] 2024-12-12 23:27:10.023 [main] SFDCLogin - Setting up the test environment.
+[DEBUG] 2024-12-12 23:27:10.023 [main] SFDCLogin - This is a debug message
+[INFO ] 2024-12-12 23:27:10.024 [main] SFDCLogin - This is an info message
+[WARN ] 2024-12-12 23:27:10.024 [main] SFDCLogin - This is a warn message
+[ERROR] 2024-12-12 23:27:10.024 [main] SFDCLogin - This is an error message
+[FATAL] 2024-12-12 23:27:10.024 [main] SFDCLogin - This is a fatal message
+[INFO ] 2024-12-12 23:27:11.603 [main] SFDCLogin - TestCase for password feild empty
